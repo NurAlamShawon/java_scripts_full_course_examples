@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d array</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        function lowscore(playerinfo) {
+            var minimum = playerinfo[0][1];
+            for (var i = 0; i < playerinfo.length; i++) {
+                if (minimum < playerinfo[i][1]) {
+                    minimum = playerinfo[i][1];
+                    var m = i;
+                }
+               var minimum1=minimum[m][0];
+                return minimum1;
+            }
+        }
+        var playerinfo = [["shawon", 85],
+        ["rimon", 701],
+        ["sadia", 501],
+        ["reza", 151],
+        ["rafi", 51]
+        ];
+
+        var minimum = lowscore(playerinfo);
+        document.write("Minimum Score Scored by ");
+        document.write(minimum);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

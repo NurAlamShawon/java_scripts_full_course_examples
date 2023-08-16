@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        var num = prompt("Enter a number for build a star ");
+        var k;
+
+        num = num / 3;
+        num = parseInt(num);
+        var jn = 0; mn = 0;
+
+        var pc = 0;
+        for (var i = num; i > 0; i--) {
+            k = i;
+
+            if (pc >= 1) {
+                for (var n = pc; n > 0; n--) {
+                    document.write("&ensp;");
+                }
+            }
+            document.write("*");
+
+
+            for (var j = k; j > 0; j--) {
+
+
+                document.write("&ensp;");
+                mn++;
+
+            }
+            document.write("*");
+
+            for (var m = k; m > 0; m--) {
+
+                document.write("&ensp;");
+                mn++;
+            }
+
+            document.write("*");
+            document.write("<br></br>");
+            pc++;
+        }
+        pc--;
+        for (var i = num * 2; i > 0; i--) {
+            document.write("*");
+
+            document.write("&ensp;");
+
+        }
+        document.write("<br></br>");
+
+
+        for (var i = num; i > 0; i--) {
+
+            if (pc >= 1) {
+                for (var n = pc; n > 0; n--) {
+                    document.write("&ensp;");
+                }
+            }
+            document.write("*");
+
+
+            for (var j = (num - pc); j > 0; j--) {
+
+
+                document.write("&ensp;");
+
+            }
+            document.write("*");
+
+            for (var m = (num - pc); m > 0; m--) {
+
+                document.write("&ensp;");
+
+            }
+
+            document.write("*");
+            document.write("<br></br>");
+
+            pc--;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
